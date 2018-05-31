@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 被2013 sp1 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!--被XMLSpy vW3C Schema产生的2013 sp1 (http://www.altova.com)-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="病案首页">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="病案页头"/>
+				<xs:element ref="个人信息"/>
+				<xs:element ref="入院信息"/>
+				<xs:element ref="诊断信息"/>
+				<xs:element ref="其他信息"/>
+				<xs:element ref="医生信息"/>
+				<xs:element ref="质量信息"/>
+				<xs:element ref="手术信息"/>
+				<xs:element ref="费用信息"/>
+				<xs:element ref="备注信息"/>
+				<xs:element ref="离院信息"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="病案页头">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="医疗机构" type="xs:string"/>
+				<xs:element name="组织机构代码" type="xs:string"/>
+				<xs:element name="医疗付费方式" type="xs:string"/>
+				<xs:element name="标题" type="xs:string"/>
+				<xs:element name="健康卡号" type="xs:string"/>
+				<xs:element name="住院次数" type="xs:string"/>
+				<xs:element name="病案号" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="个人信息">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="姓名" type="xs:string"/>
+				<xs:element name="性别" type="xs:string"/>
+				<xs:element name="出生日期">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="年" type="xs:string"/>
+							<xs:element name="月" type="xs:string"/>
+							<xs:element name="日" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="年龄">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="非新生儿">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="年龄" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="新生儿">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="年龄" type="xs:string"/>
+										<xs:element name="新生儿出生体重" type="xs:string"/>
+										<xs:element name="新生儿入院体重" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="国籍" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="地址">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="出生地">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="省" type="xs:short"/>
+										<xs:element name="市" type="xs:string"/>
+										<xs:element name="县" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="籍贯">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="省" type="xs:string"/>
+										<xs:element name="市" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="民族" type="xs:string"/>
+							<xs:element name="现住址">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="省" type="xs:string"/>
+										<xs:element name="市" type="xs:string"/>
+										<xs:element name="县" type="xs:string"/>
+										<xs:element name="电话" type="xs:string"/>
+										<xs:element name="邮编" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="户口地址">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="省" type="xs:string"/>
+										<xs:element name="市" type="xs:string"/>
+										<xs:element name="县" type="xs:string"/>
+										<xs:element name="邮编" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="工作单位及地址">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="地址" type="xs:string"/>
+										<xs:element name="单位电话" type="xs:string"/>
+										<xs:element name="邮编" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="身份证号" type="xs:string"/>
+				<xs:element name="职业" type="xs:string"/>
+				<xs:element name="婚姻" type="xs:string"/>
+				<xs:element name="联系人">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="姓名" type="xs:string"/>
+							<xs:element name="关系" type="xs:string"/>
+							<xs:element name="地址" type="xs:string"/>
+							<xs:element name="电话" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="入院信息">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="入院途径" type="xs:string"/>
+				<xs:element name="治疗类型" type="xs:string"/>
+				<xs:element name="时间">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="入院时间">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="年" type="xs:string"/>
+										<xs:element name="月" type="xs:string"/>
+										<xs:element name="日" type="xs:string"/>
+										<xs:element name="时" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="出院时间">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="年" type="xs:string"/>
+										<xs:element name="月" type="xs:string"/>
+										<xs:element name="日" type="xs:string"/>
+										<xs:element name="时" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="科别">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="入院科别">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="科别" type="xs:string"/>
+										<xs:element name="病房" type="xs:string"/>
+										<xs:element name="转科科别" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="出院科别">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="科别" type="xs:string"/>
+										<xs:element name="病房" type="xs:string"/>
+										<xs:element name="实际住院" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="诊断">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="中医">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="中医诊断" type="xs:string"/>
+										<xs:element name="疾病编码" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="西医">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="西医诊断" type="xs:string"/>
+										<xs:element name="疾病编码" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="实施临床路径" type="xs:string"/>
+				<xs:element name="使用医疗机构中药药剂" type="xs:string"/>
+				<xs:element name="使用中医治疗设备" type="xs:string"/>
+				<xs:element name="使用中医治疗技术" type="xs:string"/>
+				<xs:element name="辩证施护" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="诊断信息">
+		<xs:complexType>
+			<xs:sequence maxOccurs="unbounded">
+				<xs:element name="中医诊断">
+					<xs:complexType>
+						<xs:sequence minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="诊断">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="出院中医诊断">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="主病" type="xs:string"/>
+													<xs:element name="主证" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="入院病情" type="xs:string"/>
+										<xs:element name="疾病编码" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="西医诊断">
+					<xs:complexType>
+						<xs:sequence minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="诊断">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="出院西医诊断">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="主要诊断" type="xs:string"/>
+													<xs:element name="其他诊断" type="xs:string"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="入院病情" type="xs:string"/>
+										<xs:element name="疾病编码" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="入院病情" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="其他信息">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="外部原因">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="损伤或中毒的外部原因" type="xs:string"/>
+							<xs:element name="疾病编码" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="病理">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="病理诊断" type="xs:string"/>
+							<xs:element name="疾病编码" type="xs:string"/>
+							<xs:element name="病理号" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="药物过敏" type="xs:string"/>
+				<xs:element name="死亡患者尸检" type="xs:string"/>
+				<xs:element name="血型" type="xs:string"/>
+				<xs:element name="Rh" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="医生信息">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="科主任" type="xs:string"/>
+				<xs:element name="医师" type="xs:string"/>
+				<xs:element name="主治医师" type="xs:string"/>
+				<xs:element name="住院医师" type="xs:string"/>
+				<xs:element name="责任护士" type="xs:string"/>
+				<xs:element name="进修医师" type="xs:string"/>
+				<xs:element name="实习医师" type="xs:string"/>
+				<xs:element name="编码员" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="质量信息">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="病案质量" type="xs:string"/>
+				<xs:element name="质控医生" type="xs:string"/>
+				<xs:element name="质控护士" type="xs:string"/>
+				<xs:element name="日期">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="年" type="xs:string"/>
+							<xs:element name="月" type="xs:string"/>
+							<xs:element name="日" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="手术信息">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="手术">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="手术及操作编码" type="xs:string"/>
+							<xs:element name="手术及操作日期" type="xs:string"/>
+							<xs:element name="手术级别" type="xs:string"/>
+							<xs:element name="手术及操作名称" type="xs:string"/>
+							<xs:element name="手术及操作医生">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="术者" type="xs:string"/>
+										<xs:element name="助理一" type="xs:string"/>
+										<xs:element name="助理二" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="切口愈合等级" type="xs:string"/>
+							<xs:element name="麻醉方式" type="xs:string"/>
+							<xs:element name="麻醉医师" type="xs:string"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="离院信息">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="离院方式" type="xs:string"/>
+				<xs:element name="是否有出院31天内再住院计划" type="xs:string"/>
+				<xs:element name="颅脑损伤患者昏迷时间">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="入院">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="天" type="xs:string"/>
+										<xs:element name="小时" type="xs:string"/>
+										<xs:element name="分钟" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="出院">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="天" type="xs:string"/>
+										<xs:element name="小时" type="xs:string"/>
+										<xs:element name="分钟" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="费用信息">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="住院费用">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="自付金额" type="xs:double"/>
+							<xs:element name="总费用" type="xs:double"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="综合医疗服务类">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="一般医疗服务费">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="一般医疗服务费" type="xs:double"/>
+										<xs:element name="中医辨证论治费" type="xs:double"/>
+										<xs:element name="中医辨证论治会诊费" type="xs:double"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="一般治疗操作费" type="xs:double"/>
+							<xs:element name="护理费" type="xs:double"/>
+							<xs:element name="其他费用" type="xs:double"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="诊断类">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="病理诊断费" type="xs:double"/>
+							<xs:element name="实验室诊断费" type="xs:double"/>
+							<xs:element name="影像学诊断费" type="xs:double"/>
+							<xs:element name="临床诊断项目费" type="xs:double"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="治疗类">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="非手术治疗项目费">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="临床物理治疗费" type="xs:double"/>
+										<xs:element name="非手术治疗项目费" type="xs:double"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="手术治疗费">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="麻醉费" type="xs:double"/>
+										<xs:element name="手术费" type="xs:double"/>
+										<xs:element name="手术治疗费" type="xs:double"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="康复类">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="康复费" type="xs:double"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="中医类中医和民族医医疗服务">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="中医诊断" type="xs:double"/>
+							<xs:element name="中医治疗">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="中医外治" type="xs:double"/>
+										<xs:element name="中医骨伤" type="xs:double"/>
+										<xs:element name="针刺与灸法" type="xs:double"/>
+										<xs:element name="中医推拿治疗" type="xs:double"/>
+										<xs:element name="中医肛肠治疗" type="xs:double"/>
+										<xs:element name="中医特殊治疗" type="xs:double"/>
+										<xs:element name="中医治疗" type="xs:double"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="中医其他">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="中药特殊调配加工" type="xs:double"/>
+										<xs:element name="辨证施膳" type="xs:double"/>
+										<xs:element name="中医其他" type="xs:double"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="西药类">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="西药费">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="抗菌药物费用" type="xs:double"/>
+										<xs:element name="西药费" type="xs:double"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="中药类">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="中成药费">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="医疗机构中药制剂费" type="xs:double"/>
+										<xs:element name="中成药费" type="xs:double"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="中草药费" type="xs:double"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="血液和血液制品类">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="血费" type="xs:double"/>
+							<xs:element name="白蛋白类制品费" type="xs:double"/>
+							<xs:element name="球蛋白类制品费" type="xs:double"/>
+							<xs:element name="凝血因子类制品费" type="xs:double"/>
+							<xs:element name="细胞因子类制品费" type="xs:double"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="耗材类">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="检查用一次性医用材料费" type="xs:double"/>
+							<xs:element name="治疗用一次性医用材料费" type="xs:double"/>
+							<xs:element name="手术用一次性医用材料费" type="xs:double"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="其他类">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="其他费" type="xs:double"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="备注信息">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="备注" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="说明信息">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="说明" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

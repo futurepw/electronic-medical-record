@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--被XMLSpy vDTD产生的2013 sp1 (http://www.altova.com)-->
+<!ELEMENT 病案首页 (病案页头, 个人信息, 入院信息, 诊断信息, 其他信息, 医生信息, 质量信息, 手术信息, 费用信息, 备注信息, 离院信息)>
+<!ELEMENT 病案页头 (医疗机构, 组织机构代码, 医疗付费方式, 标题, 健康卡号, 住院次数, 病案号)>
+<!ELEMENT 医疗机构 (#PCDATA)>
+<!ELEMENT 组织机构代码 (#PCDATA)>
+<!ELEMENT 医疗付费方式 (#PCDATA)>
+<!ELEMENT 标题 (#PCDATA)>
+<!ELEMENT 健康卡号 (#PCDATA)>
+<!ELEMENT 住院次数 (#PCDATA)>
+<!ELEMENT 病案号 (#PCDATA)>
+<!ELEMENT 个人信息 (姓名, 性别, 出生日期, 年龄, 地址, 身份证号, 职业, 婚姻, 联系人)>
+<!ELEMENT 姓名 (#PCDATA)>
+<!ELEMENT 性别 (#PCDATA)>
+<!ELEMENT 出生日期 (年, 月, 日)>
+<!ELEMENT 年 (#PCDATA)>
+<!ELEMENT 月 (#PCDATA)>
+<!ELEMENT 日 (#PCDATA)>
+<!ELEMENT 年龄 ANY>
+<!ELEMENT 非新生儿 (年龄)>
+<!ELEMENT 新生儿 (年龄, 新生儿出生体重, 新生儿入院体重)>
+<!ELEMENT 新生儿出生体重 (#PCDATA)>
+<!ELEMENT 新生儿入院体重 (#PCDATA)>
+<!ELEMENT 国籍 (#PCDATA)>
+<!ELEMENT 地址 ANY>
+<!ELEMENT 出生地 (省, 市, 县)>
+<!ELEMENT 省 (#PCDATA)>
+<!ELEMENT 市 (#PCDATA)>
+<!ELEMENT 县 (#PCDATA)>
+<!ELEMENT 籍贯 (省, 市)>
+<!ELEMENT 民族 (#PCDATA)>
+<!ELEMENT 现住址 (省, 市, 县, 电话, 邮编)>
+<!ELEMENT 电话 (#PCDATA)>
+<!ELEMENT 邮编 (#PCDATA)>
+<!ELEMENT 户口地址 (省, 市, 县, 邮编)>
+<!ELEMENT 工作单位及地址 (地址, 单位电话, 邮编)>
+<!ELEMENT 单位电话 (#PCDATA)>
+<!ELEMENT 身份证号 (#PCDATA)>
+<!ELEMENT 职业 (#PCDATA)>
+<!ELEMENT 婚姻 (#PCDATA)>
+<!ELEMENT 联系人 (姓名, 关系, 地址, 电话)>
+<!ELEMENT 关系 (#PCDATA)>
+<!ELEMENT 入院信息 (入院途径, 治疗类型, 时间, 科别, 诊断, 实施临床路径, 使用医疗机构中药药剂, 使用中医治疗设备, 使用中医治疗技术, 辩证施护)>
+<!ELEMENT 入院途径 (#PCDATA)>
+<!ELEMENT 治疗类型 (#PCDATA)>
+<!ELEMENT 时间 (入院时间, 出院时间)>
+<!ELEMENT 入院时间 (年, 月, 日, 时)>
+<!ELEMENT 时 (#PCDATA)>
+<!ELEMENT 出院时间 (年, 月, 日, 时)>
+<!ELEMENT 科别 ANY>
+<!ELEMENT 入院科别 (科别, 病房, 转科科别)>
+<!ELEMENT 病房 (#PCDATA)>
+<!ELEMENT 转科科别 (#PCDATA)>
+<!ELEMENT 出院科别 (科别, 病房, 实际住院)>
+<!ELEMENT 实际住院 (#PCDATA)>
+<!ELEMENT 诊断 ANY>
+<!ELEMENT 中医 (中医诊断, 疾病编码)>
+<!ELEMENT 中医诊断 ANY>
+<!ELEMENT 疾病编码 (#PCDATA)>
+<!ELEMENT 西医 (西医诊断, 疾病编码)>
+<!ELEMENT 西医诊断 ANY>
+<!ELEMENT 实施临床路径 (#PCDATA)>
+<!ELEMENT 使用医疗机构中药药剂 (#PCDATA)>
+<!ELEMENT 使用中医治疗设备 (#PCDATA)>
+<!ELEMENT 使用中医治疗技术 (#PCDATA)>
+<!ELEMENT 辩证施护 (#PCDATA)>
+<!ELEMENT 诊断信息 (中医诊断, 西医诊断, 入院病情)>
+<!ELEMENT 出院中医诊断 (主病, 主证)>
+<!ELEMENT 主病 (#PCDATA)>
+<!ELEMENT 主证 (#PCDATA)>
+<!ELEMENT 入院病情 (#PCDATA)>
+<!ELEMENT 出院西医诊断 (主要诊断, 其他诊断)>
+<!ELEMENT 主要诊断 (#PCDATA)>
+<!ELEMENT 其他诊断 (#PCDATA)>
+<!ELEMENT 其他信息 (外部原因, 病理, 药物过敏, 死亡患者尸检, 血型, Rh)>
+<!ELEMENT 外部原因 (损伤或中毒的外部原因, 疾病编码)>
+<!ELEMENT 损伤或中毒的外部原因 (#PCDATA)>
+<!ELEMENT 病理 (病理诊断, 疾病编码, 病理号)>
+<!ELEMENT 病理诊断 (#PCDATA)>
+<!ELEMENT 病理号 (#PCDATA)>
+<!ELEMENT 药物过敏 (#PCDATA)>
+<!ELEMENT 死亡患者尸检 (#PCDATA)>
+<!ELEMENT 血型 (#PCDATA)>
+<!ELEMENT Rh (#PCDATA)>
+<!ELEMENT 医生信息 (科主任, 医师, 主治医师, 住院医师, 责任护士, 进修医师, 实习医师, 编码员)>
+<!ELEMENT 科主任 (#PCDATA)>
+<!ELEMENT 医师 (#PCDATA)>
+<!ELEMENT 主治医师 (#PCDATA)>
+<!ELEMENT 住院医师 (#PCDATA)>
+<!ELEMENT 责任护士 (#PCDATA)>
+<!ELEMENT 进修医师 (#PCDATA)>
+<!ELEMENT 实习医师 (#PCDATA)>
+<!ELEMENT 编码员 (#PCDATA)>
+<!ELEMENT 质量信息 (病案质量, 质控医生, 质控护士, 日期)>
+<!ELEMENT 病案质量 (#PCDATA)>
+<!ELEMENT 质控医生 (#PCDATA)>
+<!ELEMENT 质控护士 (#PCDATA)>
+<!ELEMENT 日期 (年, 月, 日)>
+<!ELEMENT 手术信息 (手术)*>
+<!ELEMENT 手术 (手术及操作编码, 手术及操作日期, 手术级别, 手术及操作名称, 手术及操作医生, 切口愈合等级, 麻醉方式, 麻醉医师)>
+<!ELEMENT 手术及操作编码 (#PCDATA)>
+<!ELEMENT 手术及操作日期 (#PCDATA)>
+<!ELEMENT 手术级别 (#PCDATA)>
+<!ELEMENT 手术及操作名称 (#PCDATA)>
+<!ELEMENT 手术及操作医生 (术者, 助理一, 助理二)>
+<!ELEMENT 术者 (#PCDATA)>
+<!ELEMENT 助理一 (#PCDATA)>
+<!ELEMENT 助理二 (#PCDATA)>
+<!ELEMENT 切口愈合等级 (#PCDATA)>
+<!ELEMENT 麻醉方式 (#PCDATA)>
+<!ELEMENT 麻醉医师 (#PCDATA)>
+<!ELEMENT 离院信息 (离院方式, 是否有出院31天内再住院计划, 颅脑损伤患者昏迷时间)>
+<!ELEMENT 离院方式 (#PCDATA)>
+<!ELEMENT 是否有出院31天内再住院计划 (#PCDATA)>
+<!ELEMENT 颅脑损伤患者昏迷时间 (入院, 出院)>
+<!ELEMENT 入院 (天, 小时, 分钟)>
+<!ELEMENT 天 (#PCDATA)>
+<!ELEMENT 小时 (#PCDATA)>
+<!ELEMENT 分钟 (#PCDATA)>
+<!ELEMENT 出院 (天, 小时, 分钟)>
+<!ELEMENT 费用信息 (住院费用, 综合医疗服务类, 诊断类, 治疗类, 康复类, 中医类中医和民族医医疗服务, 西药类, 中药类, 血液和血液制品类, 耗材类, 其他类)>
+<!ELEMENT 住院费用 (自付金额, 总费用)>
+<!ELEMENT 自付金额 (#PCDATA)>
+<!ELEMENT 总费用 (#PCDATA)>
+<!ELEMENT 综合医疗服务类 (一般医疗服务费, 一般治疗操作费, 护理费, 其他费用)>
+<!ELEMENT 一般医疗服务费 ANY>
+<!ELEMENT 中医辨证论治费 (#PCDATA)>
+<!ELEMENT 中医辨证论治会诊费 (#PCDATA)>
+<!ELEMENT 一般治疗操作费 (#PCDATA)>
+<!ELEMENT 护理费 (#PCDATA)>
+<!ELEMENT 其他费用 (#PCDATA)>
+<!ELEMENT 诊断类 (病理诊断费, 实验室诊断费, 影像学诊断费, 临床诊断项目费)>
+<!ELEMENT 病理诊断费 (#PCDATA)>
+<!ELEMENT 实验室诊断费 (#PCDATA)>
+<!ELEMENT 影像学诊断费 (#PCDATA)>
+<!ELEMENT 临床诊断项目费 (#PCDATA)>
+<!ELEMENT 治疗类 (非手术治疗项目费, 手术治疗费)>
+<!ELEMENT 非手术治疗项目费 ANY>
+<!ELEMENT 临床物理治疗费 (#PCDATA)>
+<!ELEMENT 手术治疗费 ANY>
+<!ELEMENT 麻醉费 (#PCDATA)>
+<!ELEMENT 手术费 (#PCDATA)>
+<!ELEMENT 康复类 (康复费)>
+<!ELEMENT 康复费 (#PCDATA)>
+<!ELEMENT 中医类中医和民族医医疗服务 (中医诊断, 中医治疗, 中医其他)>
+<!ELEMENT 中医治疗 ANY>
+<!ELEMENT 中医外治 (#PCDATA)>
+<!ELEMENT 中医骨伤 (#PCDATA)>
+<!ELEMENT 针刺与灸法 (#PCDATA)>
+<!ELEMENT 中医推拿治疗 (#PCDATA)>
+<!ELEMENT 中医肛肠治疗 (#PCDATA)>
+<!ELEMENT 中医特殊治疗 (#PCDATA)>
+<!ELEMENT 中医其他 ANY>
+<!ELEMENT 中药特殊调配加工 (#PCDATA)>
+<!ELEMENT 辨证施膳 (#PCDATA)>
+<!ELEMENT 西药类 (西药费)>
+<!ELEMENT 西药费 ANY>
+<!ELEMENT 抗菌药物费用 (#PCDATA)>
+<!ELEMENT 中药类 (中成药费, 中草药费)>
+<!ELEMENT 中成药费 ANY>
+<!ELEMENT 医疗机构中药制剂费 (#PCDATA)>
+<!ELEMENT 中草药费 (#PCDATA)>
+<!ELEMENT 血液和血液制品类 (血费, 白蛋白类制品费, 球蛋白类制品费, 凝血因子类制品费, 细胞因子类制品费)>
+<!ELEMENT 血费 (#PCDATA)>
+<!ELEMENT 白蛋白类制品费 (#PCDATA)>
+<!ELEMENT 球蛋白类制品费 (#PCDATA)>
+<!ELEMENT 凝血因子类制品费 (#PCDATA)>
+<!ELEMENT 细胞因子类制品费 (#PCDATA)>
+<!ELEMENT 耗材类 (检查用一次性医用材料费, 治疗用一次性医用材料费, 手术用一次性医用材料费)>
+<!ELEMENT 检查用一次性医用材料费 (#PCDATA)>
+<!ELEMENT 治疗用一次性医用材料费 (#PCDATA)>
+<!ELEMENT 手术用一次性医用材料费 (#PCDATA)>
+<!ELEMENT 其他类 (其他费)>
+<!ELEMENT 其他费 (#PCDATA)>
+<!ELEMENT 备注信息 (备注)*>
+<!ELEMENT 备注 (#PCDATA)>
+<!ELEMENT 说明信息 (说明)*>
+<!ELEMENT 说明 (#PCDATA)>
